@@ -37,9 +37,10 @@ class MarvelHero extends Component {
             <div className="hero">
 
                 <h2>{hero.thumbnail}</h2>
-                <h3>Followers: {hero.name}</h3>
-                <h3>Location: {hero.series}</h3>
-                <p>Following: {hero.description}</p>
+                <h3>Hero Name: {hero.name}</h3>
+                <h3>Series: {hero.series}</h3>
+                <h3>Description: </h3>
+                    <p>{hero.description}</p>
 
             </div>
 

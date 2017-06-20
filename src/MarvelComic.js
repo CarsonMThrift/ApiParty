@@ -16,7 +16,6 @@ class MarvelComic extends Component {
 
     handleSubmit = (ev) => {
         ev.preventDefault()
-        console.log("i ran")
         this.props.history.push(`/marvelcomic/${this.state.heroName}`)
 
     }
