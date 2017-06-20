@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Switch, Route, NavLink } from 'react-router-dom'
-import './App.css';
+import './App.css'
 import Github from './Github'
+import MarvelComic from './MarvelComic'
+// import GoogleMap from './GoogleMap'
 
 class App extends Component {
   render() {
@@ -16,10 +18,18 @@ class App extends Component {
             <li>
               <NavLink to='/github'> Github API </NavLink>
             </li>
+            {/*<li>
+              <NavLink to='/googlemaps'>Google Maps API</NavLink>
+            </li>*/}
+            <li>
+              <NavLink to='/marvelcomic'>Marvel Comic API</NavLink>
+            </li>
           </ul>
         </div>
         <Switch>
           <Route path='/github' component={Github} />
+          {/*<Route path='/googlemaps' component={GoogleMap} />*/}
+          <Route path='/marvelcomic' component={MarvelComic} />
           <Route render={() => <p>To get started, click on of the links above</p>} />
 
         </Switch>
