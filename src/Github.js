@@ -15,7 +15,7 @@ class Github extends Component {
 
     handleSubmit = (ev) => {
         ev.preventDefault()
-        this.props.history.push('/github/${this.state/username}')
+        this.props.history.push(`/github/${this.state.username}`)
 
     }
 
